@@ -1,8 +1,6 @@
 from curses.ascii import SO
 
-from leetcode.string.longest_substring_without_repeating_characters import (
-    length_of_longest_substring,
-)
+from leetcode.string.longest_substring import length_of_longest_substring
 from pytest import mark
 
 

@@ -33,7 +33,6 @@ Constraints:
 - s consists of English letters, digits, symbols and spaces.
 
 Source: [leetcode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
-
 """
 
 
