@@ -6,6 +6,8 @@ A necessary evil...
 
 ## Array
 
+- [Two Sum](./leetcode/array/two_sum.py)
+
 ## Binary
 
 ## Dynamic Programming
