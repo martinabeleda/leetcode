@@ -7,6 +7,7 @@ A necessary evil...
 ## Array
 
 - [Two Sum](./leetcode/array/two_sum.py)
+- [Maximum Subarray](./leetcode/array/maximum_subarray.py)
 
 ## Binary
 
@@ -21,6 +22,8 @@ A necessary evil...
 ## Linked List
 
 ## Matrix
+
+- [Spiral Matrix](./leetcode/matrix/spiral_matrix.py)
 
 ## String
 
