@@ -53,7 +53,7 @@ def length_of_longest_substring(string: str) -> int:
     """
     seen = {}  # Record the last seen position of each character
     start = 0  # Maintain a pointer to the start of the sliding window
-    longest = 0  # Maintain a record of the longes substring so far
+    longest = 0  # Maintain a record of the longest substring so far
 
     for i, character in enumerate(string):
         if character in seen and start <= seen[character]:
