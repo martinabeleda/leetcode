@@ -1,6 +1,6 @@
 # Leetcode Solutions
 
-![example workflow](https://github.com/martinabeleda/leetcode/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/martinabeleda/leetcode/actions/workflows/test.yml/badge.svg)
 
 
 A necessary evil...
