@@ -1,5 +1,6 @@
-from leetcode.tree.same_tree import Solution, TreeNode
 import pytest
+
+from leetcode.tree.same_tree import Solution, TreeNode
 
 TEST_CASES = [
     [

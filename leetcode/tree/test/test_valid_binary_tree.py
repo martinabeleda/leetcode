@@ -1,5 +1,6 @@
-from leetcode.tree.valid_binary_tree import Solution, TreeNode
 import pytest
+
+from leetcode.tree.valid_binary_tree import Solution, TreeNode
 
 TEST_CASES = [
     [

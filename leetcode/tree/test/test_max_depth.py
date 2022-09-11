@@ -1,5 +1,6 @@
-from leetcode.tree.max_depth import Solution, TreeNode
 import pytest
+
+from leetcode.tree.max_depth import Solution, TreeNode
 
 TEST_CASES = [
     [

@@ -36,7 +36,7 @@ class Solution:
         high: float = float("inf"),
     ) -> bool:
         """Validate Binary Search Tree
-        
+
         Approach:
             - Traverse the tree. Must be a depth first search
             - Shortcut: if any of the subtrees are invalid. Return False.
@@ -47,14 +47,16 @@ class Solution:
                 - If left or right are invalid, return False
                 - The left tree should be less than the min of this node and the high value
                 - The right tree should be greater than the max of this node and the low
-                
+
         Invalid Test Case:
-        
+
+        ```
                  5
                /   \
               1     6
              / \   / \
             0   9 4   7
+        ```
         
         """
         if root is None:

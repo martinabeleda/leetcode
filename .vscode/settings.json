@@ -18,7 +18,7 @@
         "--use-parentheses",
         "--line-width=100",
         "--section-default=THIRDPARTY",
-        "--project=pycanary",
+        "--project=leetcode",
         "--force-sort-within-sections"
     ],
     "python.testing.pytestEnabled": true,
