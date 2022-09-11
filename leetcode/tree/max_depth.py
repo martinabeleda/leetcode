@@ -56,12 +56,12 @@ class Solution:
                 - Visit node 7
                     - Is a leaf, return 0
         """
+
         def dfs(node: TreeNode | None) -> int:
             if node is None:
                 result = 0
             else:
                 result = 1 + max(dfs(node.left), dfs(node.right))
             return result
-        
+
         return dfs(root)
-            

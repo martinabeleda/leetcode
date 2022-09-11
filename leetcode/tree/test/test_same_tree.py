@@ -4,33 +4,29 @@ import pytest
 TEST_CASES = [
     [
         TreeNode(
-            1, 
-            left=TreeNode(2), 
+            1,
+            left=TreeNode(2),
             right=TreeNode(3),
         ),
         TreeNode(
-            1, 
-            left=TreeNode(2), 
+            1,
+            left=TreeNode(2),
             right=TreeNode(3),
-        ),  
+        ),
         True,
     ],
-    [
-        TreeNode(1, left=TreeNode(2)),
-        TreeNode(1, right=TreeNode(2)),
-        False
-    ],
+    [TreeNode(1, left=TreeNode(2)), TreeNode(1, right=TreeNode(2)), False],
     [
         TreeNode(
-            1, 
-            left=TreeNode(2), 
+            1,
+            left=TreeNode(2),
             right=TreeNode(1),
         ),
         TreeNode(
-            1, 
-            left=TreeNode(1), 
+            1,
+            left=TreeNode(1),
             right=TreeNode(2),
-        ),  
+        ),
         False,
     ],
 ]

@@ -4,15 +4,15 @@ import pytest
 TEST_CASES = [
     [
         TreeNode(
-            3, 
-            left=TreeNode(9), 
+            3,
+            left=TreeNode(9),
             right=TreeNode(
-                20, 
-                left=TreeNode(15), 
+                20,
+                left=TreeNode(15),
                 right=TreeNode(7),
             ),
-        ), 
-        3
+        ),
+        3,
     ],
     [TreeNode(1, right=TreeNode(2)), 2],
 ]
