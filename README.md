@@ -34,5 +34,6 @@ A necessary evil...
 
 - [Maximum Depth of Binary Tree](./leetcode/tree/max_depth.py)
 - [Same Tree](./leetcode/tree/same_tree.py)
+- [Validate Binary Search Tree](./leetcode/tree/valid_binary_tree.py)
 
 ## Heap
