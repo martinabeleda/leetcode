@@ -32,8 +32,8 @@ A necessary evil...
 
 ## String
 
-- [Longest Substring Without Repeating Characters](./leetcode/string/longest_substring_without_repeating_characters.py)
-- [Longest Repeating Character Replacement](./leetcode/string/)
+- [Longest Substring Without Repeating Characters](./leetcode/string/longest_substring.py)
+- [Longest Repeating Character Replacement](./leetcode/string/longest_repeating_character.py)
 
 ## Tree
 
