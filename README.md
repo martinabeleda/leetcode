@@ -1,5 +1,8 @@
 # Leetcode Solutions
 
+![example workflow](https://github.com/martinabeleda/leetcode/actions/workflows/main.yml/badge.svg)
+
+
 A necessary evil...
 
 [Blind 75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
