@@ -11,6 +11,8 @@ A necessary evil...
 
 - [Two Sum](./leetcode/array/two_sum.py)
 - [Maximum Subarray](./leetcode/array/maximum_subarray.py)
+- [Combination Sum](./leetcode/array/combination_sum.py)
+- [Subset](./leetcode/array/subset.py)
 
 ## Binary
 
@@ -40,3 +42,5 @@ A necessary evil...
 - [Validate Binary Search Tree](./leetcode/tree/valid_binary_tree.py)
 
 ## Heap
+
+- [Kth Largest Element](./leetcode/heap/kth_largest_element.py)
