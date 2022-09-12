@@ -55,10 +55,7 @@ class Solution:
         return self.solution
 
     def dfs(self, nums: list[int], subset: list[int]):
-        for num in nums:
-            if not subset or subset[-1] > num:
-                result = subset + [num]
-                self.solution.append(result)
-                self.dfs(nums=[n for n in nums if n != num], subset=result)
-            else:
-                return
+        for i, num in enumerate(nums):
+            result = subset + [num]
+            self.solution.append(result)
+            self.dfs(nums=nums[i + 1 :], subset=result)
