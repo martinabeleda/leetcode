@@ -51,7 +51,7 @@ class Solution:
                     nums = [1, 2], subset=[3], return
         """
         self.solution = [[]]
-        self.dfs(sorted(nums), subset=[])
+        self.dfs(nums, subset=[])
         return self.solution
 
     def dfs(self, nums: list[int], subset: list[int]):
