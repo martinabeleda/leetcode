@@ -24,20 +24,20 @@ class Message:
 
 def business_responsiveness_rate(biz_owner_id: int, all_messages: list[Message]) -> int:
     """Calculate business response rate
-    
+
     Calculate the rate at which a business responds to conversations. The rate is an integer percentage of the
-    conversations responded to that a business is involved in. Messages that the business is not involved in 
+    conversations responded to that a business is involved in. Messages that the business is not involved in
     will be ignored.
-    
+
     Args:
         `biz_owner_id`: the integer ID for the business.
         `all_messages`: A list of `Messages` the business is involved in.
-        
+
     Returns:
         The response rate as an integer percentage.
-        
+
     Example:
-    
+
         ```
         biz_owner_id: 42
         all_messages: [
@@ -50,24 +50,23 @@ def business_responsiveness_rate(biz_owner_id: int, all_messages: list[Message])
         ]
         assert business_responsiveness_rate(biz_owner_id, all_messages) == 33
         ```
-    
+
     """
     conversations = set()  # record the `conversation_id`s this business is involved in
     responses = set()  # record the `conversation_id`s this business responded to
-    
+
     for message in all_messages:
         # Ignore messages that the business is not involved in
         if message.sender == biz_owner_id or message.recipient == biz_owner_id:
             conversations.add(message.conversation_id)
-            
+
         # Record a response
         if message.sender == biz_owner_id:
             responses.add(message.conversation_id)
-            
+
     if not conversations:
         response_rate = 0
     else:
         response_rate = math.floor((len(responses) / len(conversations)) * 100)
-    
-    return response_rate   
 
+    return response_rate
