@@ -13,6 +13,7 @@ A necessary evil...
 - [Maximum Subarray](./leetcode/array/maximum_subarray.py)
 - [Combination Sum](./leetcode/array/combination_sum.py)
 - [Subset](./leetcode/array/subset.py)
+- [Business Response Rate (Yelp)](./leetcode/array/yelp_business_response_rate.py)
 
 ## Binary
 
@@ -29,6 +30,7 @@ A necessary evil...
 ## Matrix
 
 - [Spiral Matrix](./leetcode/matrix/spiral_matrix.py)
+- [Map Search](./leetcode/matrix/map_search.py)
 
 ## String
 
