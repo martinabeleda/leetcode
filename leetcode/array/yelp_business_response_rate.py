@@ -13,13 +13,14 @@ Only users can initiate conversations.
 Given a business owner ID and a list of messages sent via Yelp, return the given business owner's response rate.
 """
 import math
+from dataclasses import dataclass
 
 
+@dataclass
 class Message:
-    def __init__(self, sender, recipient, conversation_id):
-        self.sender = sender
-        self.recipient = recipient
-        self.conversation_id = conversation_id
+    sender: int
+    recipient: int
+    conversation_id: int
 
 
 def business_responsiveness_rate(biz_owner_id: int, all_messages: list[Message]) -> int:
