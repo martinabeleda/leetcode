@@ -46,3 +46,4 @@ A necessary evil...
 ## Heap
 
 - [Kth Largest Element](./leetcode/heap/kth_largest_element.py)
+- [Median Finder](./leetcode/heap/median_finder.py)
