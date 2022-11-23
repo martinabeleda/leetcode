@@ -65,6 +65,6 @@ class Solution:
         if not low < root.val < high:
             return False
 
-        return self.is_valid_bst(
-            root.left, low=low, high=root.val
-        ) and self.is_valid_bst(root.right, low=root.val, high=high)
+        return self.is_valid_bst(root.left, low=low, high=root.val) and self.is_valid_bst(
+            root.right, low=root.val, high=high
+        )

@@ -21,9 +21,7 @@ from typing import List, Tuple, Set
 from copy import deepcopy
 
 
-def possible_moves(
-    map: List[List[int]], location: Tuple[int, int]
-) -> Set[Tuple[int, int]]:
+def possible_moves(map: List[List[int]], location: Tuple[int, int]) -> Set[Tuple[int, int]]:
     """Find the adjacent positions you can move to given a location on the map"""
     y, x = location
     moves = [

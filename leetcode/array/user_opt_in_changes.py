@@ -42,9 +42,7 @@ def process_change_log(opt_in_change_log: list[OptInChange]) -> dict[int, User]:
     final_users = defaultdict()
     for opt_in_change in opt_in_change_log:
         opted_in = opt_in_change.action == "opt_in"
-        final_users[opt_in_change.user_id] = User(
-            opt_in_change.user_id, opted_in=opted_in
-        )
+        final_users[opt_in_change.user_id] = User(opt_in_change.user_id, opted_in=opted_in)
     return final_users
 
 
@@ -56,9 +54,7 @@ def find_changed_user_ids(
     result = []
     for user_id, user in final_users.items():
         current_user = current_users.get(user_id)
-        if is_new_user(current_user, user.opted_in) or status_changed(
-            current_user, user.opted_in
-        ):
+        if is_new_user(current_user, user.opted_in) or status_changed(current_user, user.opted_in):
             result.append(user_id)
     return result
 
