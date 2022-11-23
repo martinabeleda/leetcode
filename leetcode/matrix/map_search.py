@@ -21,7 +21,9 @@ from typing import List, Tuple, Set
 from copy import deepcopy
 
 
-def possible_moves(map: List[List[int]], location: Tuple[int, int]) -> Set[Tuple[int, int]]:
+def possible_moves(
+    map: List[List[int]], location: Tuple[int, int]
+) -> Set[Tuple[int, int]]:
     """Find the adjacent positions you can move to given a location on the map"""
     y, x = location
     moves = [
@@ -47,7 +49,11 @@ def possible_moves(map: List[List[int]], location: Tuple[int, int]) -> Set[Tuple
     return result
 
 
-def is_reachable(map: List[List[int]], current_location: Tuple[int, int], destination: Tuple[int, int]) -> bool:
+def is_reachable(
+    map: List[List[int]],
+    current_location: Tuple[int, int],
+    destination: Tuple[int, int],
+) -> bool:
     """Determine if you can reach the destination from a given location
 
     Approach:
@@ -60,7 +66,11 @@ def is_reachable(map: List[List[int]], current_location: Tuple[int, int], destin
     return _is_reachable(visited, current_location, destination)
 
 
-def _is_reachable(map: List[List[int]], current_location: Tuple[int, int], destination: Tuple[int, int]) -> bool:
+def _is_reachable(
+    map: List[List[int]],
+    current_location: Tuple[int, int],
+    destination: Tuple[int, int],
+) -> bool:
     next_locations = possible_moves(map, current_location)
     for next_location in next_locations:
         if next_location == destination:

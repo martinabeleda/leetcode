@@ -24,7 +24,9 @@ class RateLimiter:
         now = time.time()
         self.request_history[user_id].append(now)
 
-        self.request_history[user_id] = [t for t in self.request_history[user_id] if t >= now - self.n_seconds]
+        self.request_history[user_id] = [
+            t for t in self.request_history[user_id] if t >= now - self.n_seconds
+        ]
 
         # Check whether the request exceeds the rate limit.
         if len(self.request_history[user_id]) > self.max_requests:

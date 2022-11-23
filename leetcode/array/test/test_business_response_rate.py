@@ -1,4 +1,7 @@
-from leetcode.array.yelp_business_response_rate import business_responsiveness_rate, Message
+from leetcode.array.yelp_business_response_rate import (
+    business_responsiveness_rate,
+    Message,
+)
 
 
 def test_business_responsiveness_rate():

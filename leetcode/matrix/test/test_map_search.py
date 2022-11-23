@@ -32,7 +32,14 @@ def test_possible_moves(location, expected, map_a):
 
 @pytest.fixture
 def map_bc() -> List[List[int]]:
-    return [[0, 0, 0, 1, 0], [0, 1, 0, 1, 0], [0, 0, 0, 0, 0], [1, 1, 1, 0, 0], [0, 0, 1, 0, 0], [0, 0, 1, 0, 0]]
+    return [
+        [0, 0, 0, 1, 0],
+        [0, 1, 0, 1, 0],
+        [0, 0, 0, 0, 0],
+        [1, 1, 1, 0, 0],
+        [0, 0, 1, 0, 0],
+        [0, 0, 1, 0, 0],
+    ]
 
 
 @pytest.mark.parametrize(
