@@ -1,6 +1,4 @@
-from leetcode.tree.trie_ii import Trie, Node
-
-import pytest
+from leetcode.tree.trie_ii import Trie
 
 
 def test_trie_1():
