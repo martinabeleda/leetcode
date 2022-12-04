@@ -63,7 +63,7 @@ class Solution:
         solution = []
         candidates.sort()
 
-        def dfs(candidates: list[list[int]], target: int, stack: list[int]):
+        def dfs(candidates: list[int], target: int, stack: list[int]):
             if target == 0:
                 solution.append(stack)
                 return
