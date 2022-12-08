@@ -1,8 +1,8 @@
 """Business Messaging Response Rate
 
-On Yelp, users can initiate and engage in private conversations with busness owners. We want to display how responsive a 
-business owner is to users that messsage them. To calculate the response rate of a business, we use the following formula, 
-expressing the response rate as an integer percentage:
+On Yelp, users can initiate and engage in private conversations with busness owners. We want to display how 
+responsive a business owner is to users that messsage them. To calculate the response rate of a business, we 
+use the following formula, expressing the response rate as an integer percentage:
 
     ```
     floor((num_conversations_with_responses / total_conversations_for_business) * 100)

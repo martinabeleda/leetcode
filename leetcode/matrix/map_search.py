@@ -75,4 +75,4 @@ def _is_reachable(
             return True
 
     map[current_location[0]][current_location[1]] = 1
-    return any(is_reachable(map, l, destination) for l in next_locations)
+    return any(is_reachable(map, l, destination) for l in next_locations)  # noqa: E741

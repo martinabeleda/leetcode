@@ -25,4 +25,4 @@ def test_two_sum(nums, target, expected, approach):
 )
 @pytest.mark.parametrize("approach", ["naiive", "optimized"])
 def test_two_sum_invalid(nums, target, approach):
-    assert two_sum(nums, target, approach) == None
+    assert two_sum(nums, target, approach) is None

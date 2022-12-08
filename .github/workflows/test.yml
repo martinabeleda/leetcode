@@ -22,17 +22,11 @@ jobs:
           poetry install --no-interaction
       - name: Check formatting
         run: poetry run black --check .
-      - name: Run tests and generate coverage report
+      - name: Run Ruff
+        run: poetry run ruff .
+      - name: Run tests
         run: poetry run pytest -s --junitxml=./test-report.xml --cov=./ --cov-report=xml .
       - uses: actions/upload-artifact@v1
         with:
           name: test-report
           path: ./test-report.xml
-      # - name: Upload coverage to Codecov
-      #   uses: codecov/codecov-action@v3
-      #   with:
-      #     token: ${{ secrets.CODECOV_TOKEN }}
-      #     file: ./coverage.xml
-      #     flags: unittests
-      #     name: codecov-umbrella
-      #     fail_ci_if_error: true

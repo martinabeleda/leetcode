@@ -1,5 +1,3 @@
-import pytest
-
 from leetcode.array.user_opt_in_changes import (
     OptInChange,
     User,

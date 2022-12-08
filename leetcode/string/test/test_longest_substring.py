@@ -1,4 +1,3 @@
-from curses.ascii import SO
 
 from leetcode.string.longest_substring import length_of_longest_substring
 from pytest import mark
